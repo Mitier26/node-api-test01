@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "api01.js"></script>
+    <link rel="stylesheet" type="text/css" href="api01.css">
+    <title>Idle</title>
+</head>
+<body>
+    <div id="껍질">
+        <div id="title">
+        <h3>API 테스트</h3>
+    </div>
+
+    <div id="속껍질">
+        <div id="ui">
+            <p id="currentGold" value="0"></p>
+            <p id="timeperGold" value="0"></p>
+            <p id="currentGem" value="0"></p>
+        </div>
+        
+        <div id="btn">
+            <button id="boxbtn" type="button" onclick="dis1()">상자구입</button>
+            <button id="boxbtn" type="button" onclick="dis2()">아이템</button>
+            <button id="boxbtn" type="button" onclick="reset();">초기화</button>
+            <button id="boxbtn" type="button" onclick="dis3()">설명</button>
+        </div>
+
+        <div id="buy" >
+            <div id="box1">
+                <h4>일반상자</h4>
+                <p id="percent1">N: 100% R:100% U:100% S: 100% L:100%</p>
+                <p id="nExp"></p>
+                <p id="nLevel"></p>
+                <button class="buybtn" type="button" onclick="buybuy('n', 1, 0, 10)">10원<br>x1</button>
+                <button class="buybtn" type="button" onclick="buybuy('n', 10, 0, 100)">100원<br>x10</button>
+            </div>
+            <div id="box1">
+                <h4>좋은상자</h4>
+                <p id="percent2">N: 100% R:100% U:100% S: 100% L:100%</p>
+                <p id="rExp"></p>
+                <p id="rLevel"></p>
+                <button class="buybtn" type="button" onclick="buybuy('r', 1, 0, 1000)">1000원<br>x1</button>
+                <button class="buybtn" type="button" onclick="buybuy('r', 10, 0, 10000)">10000원<br>x10</button>
+            </div>  
+        </div>
+
+
+        <div id="info">
+            <div id="result1">
+                <p id="m0"></p>
+                <p id="m1"></p>
+                <p id="m2"></p>
+                <p id="m3"></p>
+                <p id="m4"></p>
+                <p id="m5"></p>
+                <p id="m6"></p>
+                <p id="m7"></p>
+                <p id="m8"></p>
+                <p id="m9"></p>
+            </div>
+
+            <div id="result2">
+                <p id="bc1"></p>
+                <p id="bc2"></p>
+                <p id="bc3"></p>
+                <p id="bc4"></p>
+                <p id="bc5"></p>
+            </div>
+
+            <div id="result3">
+                <p id="t0"></p>
+                <p id="t1"></p>
+                <p id="t2"></p>
+                <p id="t3"></p>
+                <p id="t4"></p>
+                <p id="t5"></p>
+                <p id="t6"></p>
+                <p id="t7"></p>
+                <p id="t8"></p>
+                <p id="t9"></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+    load();
+    startGame();
+    </script>
+
+</body>
+</html>
